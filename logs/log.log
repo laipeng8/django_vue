@@ -1,0 +1,6 @@
+INFO 2023-11-14 15:36:28,651 autoreload 668 Watching for file changes with StatReloader
+INFO 2023-11-14 15:36:59,862 basehttp 212 "GET / HTTP/1.1" 200 10664
+WARNING 2023-11-14 15:37:00,665 log 241 Not Found: /favicon.ico
+WARNING 2023-11-14 15:37:00,666 basehttp 212 "GET /favicon.ico HTTP/1.1" 404 2114
+INFO 2023-11-14 15:45:20,227 autoreload 266 D:\Django_project\django_vue_exam\django_vue\django_vue\settings.py changed, reloading.
+INFO 2023-11-14 15:45:20,692 autoreload 668 Watching for file changes with StatReloader
