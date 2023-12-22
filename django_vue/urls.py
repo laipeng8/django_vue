@@ -15,6 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
+<<<<<<< HEAD
 from django.urls import path,include
 
 # 总路由添加路由转换器
@@ -29,4 +30,10 @@ urlpatterns = [
     path('',include('apps.users.urls')),#添加分路由，上面有解释用法
     path('',include('apps.identify.urls')),#身份验证的路由
     path('',include('apps.yolo.urls')),#yolov8检测的路由
+=======
+from django.urls import path
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 ]

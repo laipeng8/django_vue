@@ -6,6 +6,7 @@ It exposes the ASGI callable as a module-level variable named ``application``.
 For more information on this file, see
 https://docs.djangoproject.com/en/4.2/howto/deployment/asgi/
 """
+<<<<<<< HEAD
 # asgi.py
 import os
 from django.core.asgi import get_asgi_application
@@ -27,3 +28,13 @@ application = ProtocolTypeRouter(
     }
 )
 
+=======
+
+import os
+
+from django.core.asgi import get_asgi_application
+
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "django_vue.settings")
+
+application = get_asgi_application()
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671

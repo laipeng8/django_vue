@@ -4,6 +4,7 @@ WARNING 2023-11-14 15:37:00,665 log 241 Not Found: /favicon.ico
 WARNING 2023-11-14 15:37:00,666 basehttp 212 "GET /favicon.ico HTTP/1.1" 404 2114
 INFO 2023-11-14 15:45:20,227 autoreload 266 D:\Django_project\django_vue_exam\django_vue\django_vue\settings.py changed, reloading.
 INFO 2023-11-14 15:45:20,692 autoreload 668 Watching for file changes with StatReloader
+<<<<<<< HEAD
 ERROR 2023-11-14 16:17:06,482 exception 124 Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
 Traceback (most recent call last):
   File "D:\Anaconda\envs\django39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
@@ -2528,3 +2529,5 @@ INFO 2023-12-22 16:16:25,088 runserver 189 WebSocket HANDSHAKING /text_video/ [1
 INFO 2023-12-22 16:16:25,135 runserver 185 WebSocket CONNECT /text_video/ [127.0.0.1:63158]
 INFO 2023-12-22 16:17:30,281 autoreload 668 Watching for file changes with StatReloader
 INFO 2023-12-22 16:19:13,890 runserver 168 HTTP GET /yolo_video/ 200 [0.06, 127.0.0.1:63324]
+=======
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671

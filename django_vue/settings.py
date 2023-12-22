@@ -9,18 +9,26 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+<<<<<<< HEAD
 
 
+=======
+import os
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+<<<<<<< HEAD
 import os,sys
 # 添加os路径
 sys.path.insert(0,os.path.join(BASE_DIR,'apps'))
 # 图片文件的根目录
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+=======
+
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -31,19 +39,27 @@ SECRET_KEY = "django-insecure-0x7e@ohb_0ylx_z)16*^@-(_m_trr$vokg%+3elyl88x$z2#81
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['www.mysite.site','127.0.0.1']
+=======
+ALLOWED_HOSTS = ['www.mysite.site']
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 
 
 # Application definition
 
 INSTALLED_APPS = [
+<<<<<<< HEAD
     'daphne',#添加websocket子应用
+=======
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+<<<<<<< HEAD
     "apps.users",
     'corsheaders',#添加跨域的子应用
 
@@ -54,16 +70,26 @@ CHANNEL_LAYERS = {
         'BACKEND': 'channels.layers.InMemoryChannelLayer',
     },
 }
+=======
+]
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
+<<<<<<< HEAD
     #"django.middleware.csrf.CsrfViewMiddleware",#CSRF 防护功能,针对post请求表单进行保护
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     'corsheaders.middleware.CorsMiddleware',#跨域的中间层设置
+=======
+    "django.middleware.csrf.CsrfViewMiddleware",
+    "django.contrib.auth.middleware.AuthenticationMiddleware",
+    "django.contrib.messages.middleware.MessageMiddleware",
+    "django.middleware.clickjacking.XFrameOptionsMiddleware",
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 ]
 
 ROOT_URLCONF = "django_vue.urls"
@@ -117,6 +143,7 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
+<<<<<<< HEAD
     "code": {  # code --验证码
         "BACKEND": "django_redis.cache.RedisCache",
         "LOCATION": "redis://127.0.0.1:6379/2",
@@ -124,6 +151,8 @@ CACHES = {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
     },
+=======
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 }
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "session"
@@ -151,8 +180,14 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
+<<<<<<< HEAD
 LANGUAGE_CODE = "zh-hans"
 TIME_ZONE = "Asia/Shanghai"
+=======
+LANGUAGE_CODE = "en-us"
+
+TIME_ZONE = "UTC"
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
 
 USE_I18N = True
 
@@ -209,6 +244,7 @@ LOGGING = {
             'level': 'INFO',  # 日志器接收的最低日志级别
         },
     }
+<<<<<<< HEAD
 }
 
 # 自定义模型类
@@ -225,3 +261,6 @@ CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 # 这两个配置的作用是让Django获取正确的主机和端口信息，以便在流式传输视频时正确地生成视频URL。
 USE_X_FORWARDED_HOST = True
 USE_X_FORWARDED_PORT = True
+=======
+}
+>>>>>>> 03bf3c0b55814774b564e8ba71098416469e8671
